@@ -1,0 +1,71 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+    <section class="service-2 section bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="title text-center">
+              <h2>Your Matching Rate Is {{mrate}}%</h2>
+              <h4>SKy Rocket Your Career With Our Personalized</h4>
+              <h2>Recommended Jobs</h2>
+              <span class="border"></span>
+              <p>Our way of changing the job search process</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            {% for index, row in recommended_jobs.iterrows %}
+            <div class="col-md-4">
+              <div class="service-item text-center" onmouseover="this.style.borderColor='#f0326b'" onmouseout="this.style.borderColor='#F9F9F9'">
+                <button type="submit" class="btn btn-main-sm" style="position: absolute; top: 0; right: 0;">Direct Apply</button>
+                <span class="count">{{ forloop.counter }}</span>
+                <i class="tf-ion-ios-briefcase-outline"></i>
+                <h4>{{ row.job_title }}</h4>
+                <h5>{{ row.company }}</h5>
+                <p>{{ row.skills }}</p>
+              </div>
+            </div>
+            {% if forloop.counter|divisibleby:3 %}
+            </div><br><div class="row">
+            {% endif %}
+            {% endfor %}
+          </div>
+      </div>    <!-- End container -->
+    </section>
+    <br>
+    <section class="about-2 section bg-gray" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <h2>Strengthen your chances by developing these recommended skills : </h2>
+          </div>
+          <ul>
+            {% for skill in skills %}
+            <li><h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - {{ skill }}
+
+            </h3></li>
+            {% endfor %}
+          </ul>
+        </div> 		<!-- End row -->
+      </div>   	<!-- End container -->
+    </section>  
+    <!-- End section -->
+    <!--<br>-->
+    <section class="call-to-action section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Explore training programs to boost your qualifications.</h2>
+            <p>To further develop these recommended skills, consider enrolling in training programs offered by our partner : <br> GoMyCode Tunisia</p>
+            <a href="https://gomycode.com/TN-FR/home" target="_blank" class="btn btn-main">Enroll</a>
+          </div>
+        </div> 		<!-- End row -->
+      </div>   	<!-- End container -->
+    </section> 
+{% endblock %}
+
+
+
+

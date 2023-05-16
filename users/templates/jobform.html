@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="single-page-header" style="background-color: #1836b2;" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Find Recommended Jobs Just For You</h2>
+				<nav aria-label="breadcrumb mx-auto" role="navigation">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="">Home</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">My Recommended Jobs</li>
+				  </ol>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Srart Contact Us
+		=========================================== -->		
+        <section class="contact-us section bg-gray" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title text-center">
+                            
+                            <h2>Education Form</h2>
+                            <span class="border"></span>
+                            <h4>Discover your next career opportunity</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                    <!-- / End Contact Details -->
+                        
+                    <!-- Contact Form -->
+                    <div class="contact-form col-12 col-md-6 " style="width: 50%; margin: 0 auto;" >
+                        <form id="contact-form" method="post" role="form" action="{% url 'jobform' %}">
+                            {% csrf_token %}
+                        
+                            <div class="form-group">
+                                <select style="background-image: linear-gradient(100deg, #f9643d, #fe2a77);border: none;
+                                padding: 15px 0;
+                                width: 100%;
+                                margin: 0;border-radius: 0;cursor: pointer;">
+                                    <option value="option1">Esprit Engineering</option>
+                                    <option value="option2">Esprit Business</option>
+                                  </select>
+                            </div>
+                            
+                            
+                            <div class="form-group" >
+                                <select name="option1" id="option1" style="background-image: linear-gradient(100deg, #f9643d, #fe2a77);border: none;
+                                padding: 15px 0;
+                                width: 100%;
+                                margin: 0;border-radius: 0;cursor: pointer;"  onmouseover="this.style.borderColor='#f0326b'">
+                                    <option value="AI">AI</option>
+                                    <option value="DS">DS</option>
+                                    <option value="INFINI">INFINI</option>
+                                    <option value="TWIN">TWIN</option>
+                                    <option value="SE">SE</option>
+                                    <option value="SAE">SAE</option>
+                                    <option value="BI">BI</option>
+                                    <option value="ARCTIC">ARCTIC</option>
+                                    <option value="BA">BA</option>
+                                    <option value="MK">MK</option>
+                                  </select>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea rows="6" placeholder="Other Gained Skills" class="form-control" name="skills" id="skills"></textarea>	
+                            </div>
+                        
+                            
+                            <div id="mail-fail" class="error">
+                                Sorry, your credentials are wrong :(
+                            </div>
+                            
+                            <div id="cf-submit">
+                                <input type="submit" style="background-image: linear-gradient(100deg, #f9643d, #fe2a77);border: none;
+                                padding: 15px 0;
+                                width: 100%;
+                                margin: 0;color: #fff;border-radius: 0;cursor: pointer;"  onmouseover="this.style.borderColor='#f0326b'" id="submit" class="btn btn-transparent" value="GO">
+                            </div>						
+                            
+                        </form>
+                    </div>
+                    <!-- ./End Contact Form -->
+                </div> <!-- end row -->
+                
+                
+            </div> <!-- end container -->
+        </section> <!-- end section -->
+<!-- Contact End -->
+{% endblock %}

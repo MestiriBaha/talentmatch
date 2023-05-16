@@ -1,0 +1,10 @@
+option,skills,jobs
+AI,"computer vision,nlp,sql,python,datamining,hadoop,spark,r,nosql,ai,artificial intelligence","ai engineer,artificial intelligence engineer, data scientist, data science engineer"
+TWIN,"api,rest,angular,symfony,.net,c#,springboot,unix,nosql,sql,javascript,dotnet,html,css,c,java","software developer, software engineer, full stack developer,back-end developer,front-end developer, angular developer, springboot developer, symfony developer"
+SE,devops,"devops engineer, cloud engineer"
+SIM,"swift,android development,ios development,mobile development,flutter,ios,android,spark,hadoop,big data,springboot,dotnet,node js,sql,nosql,api,rest api","mobile developer,android developer,mobile development engineer,ios developer"
+SAE,"front-end,back-end,api,rest api,angular,dotnet,springboot,nosql,sql,hadoop,spark,java,html,css,c,big data","software engineer,software developer,software development engineer,software programmer,technical support engineer,web developer"
+INFINI,"finance,machine learning,data mining","data scientist, data science engineer"
+DS,"nlp,data science,data mining,data visualization,r,python,sql,hadoop,spark,java,machine learning,deep learning,data mining","data scientist,data engineer,machine learning engineer,database administrator,data architect,systems administrator"
+BI,"data warehousing,data mining,data visualization,etl,bi,business intelligence,datamining,python,r","big data engineer,data analyst,business intelligence developer,business intelligence engineer,bi engineer,bi developer,it business analyst,business intelligence analyst"
+ARCTIC,"aws,azure,cloud computing,cybersecurity frameworks,unix,cloud","cloud solutions architect,cloud engineer,cloud administrator,cloud consultant,cloud security engineer,cloud support specialist,cloud developer,cloud migration specialist,cloud project manager,network administrator,systems administrator,network engineer,cloud solutions architect,information security manager"
